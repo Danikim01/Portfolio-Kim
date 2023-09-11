@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import 'contact';
+@import 'fonts';
+@import 'services';
 *{
     margin: 0;
     padding: 0;
@@ -27,10 +29,6 @@ body{
             color: #ededed;
             p{
                 max-width: 600px;
-            }
-            h1{
-                font-size: 56px;
-                font-weight: 700;
             }
             p{
                 font-size: 16px;
@@ -168,16 +166,14 @@ body{
                 }
             }
         }
+
+        .aptitudes{
+            transform: translateY(-50px);
+        }
     }
 }
 
 .home{
-    h2{
-        font-size: 32px;
-        font-weight: 700;
-        color: #00abf0;
-    }
-
     section{
         display: flex;
         flex-direction: column;
@@ -230,28 +226,6 @@ body{
                 }
             }
             
-        }
-    }
-
-    .personal-info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 30vh;
-        margin-bottom: 90px;
-        p{
-            color:#ededed;
-            font-size: 16px;
-        }
-        a{
-            color: #ededed;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            &:hover{
-                color: #00abf0;
-            }
         }
     }
 }
@@ -344,10 +318,34 @@ footer{
                 color: #081b29;
             }
         }
+        
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin-bottom: 30px;
+        }
+        p{
+            color:#081b29;
+            font-size: 16px;
+        }
+        a{
+            text-align: center;
+            color: #081b29;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            &:hover{
+                color: #ededed;
+            }
+        }
         .footer__social-media{
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            width: 100%;
+            margin-top: 30px;
             a{
                 display: flex;
                 text-decoration: none;
@@ -361,6 +359,7 @@ footer{
                 width: 40px;
             }
         }
+    }
     }
     #copyright{
         text-align: center;
