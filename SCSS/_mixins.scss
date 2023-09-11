@@ -1,0 +1,19 @@
+@mixin link-btn-style{
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.23rem;
+        border: 2px solid #fff;
+        padding: 10px;
+        border-radius: 15px;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            background-color: #fff;
+            color: #27272a;
+        }
+    }
+}

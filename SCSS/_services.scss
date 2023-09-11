@@ -1,8 +1,19 @@
 .services-main{
     margin-bottom: 50px;
+    padding: 30px;
     h1{
         text-align: center;
         color: #ededed;
+    }
+    @media (max-width: 900px){
+        h1{
+            font-size: 45px;
+        }
+    }
+    @media (max-width: 700px){
+        h1{
+            font-size: 35px;
+        }
     }
     h2{
         color: #ededed;
@@ -37,23 +48,7 @@
                 margin-bottom: 1.9rem;
                 margin-top: 1.25rem;
             }
-            a{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 50%;
-                color: #fff;
-                text-decoration: none;
-                font-size: 1.23rem;
-                border: 2px solid #fff;
-                padding: 10px;
-                border-radius: 15px;
-                transition: all 0.5s ease-in-out;
-                &:hover{
-                    background-color: #fff;
-                    color: #27272a;
-                }
-            }
+            @include link-btn-style;
         }
 
         @media (max-width: 900px){
