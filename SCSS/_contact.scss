@@ -1,6 +1,4 @@
 .contact-main{
-    margin-top: 90px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,12 +6,6 @@
     color:#ededed;
     margin-bottom: 90px;
     padding: 30px;
-    h1{
-        text-align: center;
-        font-size: 56px;
-        font-weight: 700;
-        margin-bottom: 10px;
-    }
     form{
         border: 2px solid #ededed;
         padding: 20px;

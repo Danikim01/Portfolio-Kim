@@ -3,17 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
   </head>
   <body>
     <header>
@@ -56,41 +52,80 @@
       </nav>
     </header>
 
-    <main class="contact-main">
-      <h1>Contact Me</h1>
-      <div class="contact-main__info-container"></div>
-      <form action="">
-        <div>
-          <div><label for="nombre">Nombre:</label></div>
-          <div>
-            <input type="text" id="nombre" name="nombre" class="text-input" />
+    <main>
+      <section class="pricing-container">
+        <h1>Pricing Plans</h1>
+        <p class="sub-header">
+          Our pricing plans come with a 30-day money back guarantee and various
+          membership tiers, each tailored to cater to different projects.
+        </p>
+        <div class="pricing">
+          <div class="pricing-card">
+            <div class="card-content">
+              <p>Basic</p>
+              <div id="price"><p>19.99$</p></div>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Smart coding plan
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                At home workouts
+              </p>
+            </div>
+            <button class="btn">Get started</button>
           </div>
-        </div>
 
-        <div>
-          <div><label for="email">Email:</label></div>
-          <div>
-            <input type="email" id="email" name="email" class="text-input" />
+          <div class="pricing-card">
+            <div class="card-content">
+              <p>Gold plan</p>
+              <div id="price"><p>29.99$</p></div>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Pro Codes
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Smart coding plans
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                At home workouts
+              </p>
+            </div>
+            <button class="btn">Get started</button>
           </div>
-        </div>
 
-        <div>
-          <div><label for="subject">Subject:</label></div>
-          <div>
-            <input type="text" id="subject" name="subject" class="text-input" />
+          <div class="pricing-card">
+            <div class="card-content">
+              <p>Diamond Plan</p>
+              <div id="price"><p>99.99$</p></div>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Elite Classes & Courses
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Pro Codes
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Personal coaching
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                Smart coding plans
+              </p>
+              <p>
+                <i class="bx bx-check-circle"></i>
+                At home workouts
+              </p>
+            </div>
+            <button class="btn">Get started</button>
           </div>
         </div>
-
-        <div>
-          <div><label for="mensaje">Mensaje:</label></div>
-          <div>
-            <textarea id="mensaje" cols="94" rows="5"></textarea>
-          </div>
-        </div>
-      </form>
-      <div id="send-data-btn"><a href="">Send Data</a></div>
+      </section>
     </main>
-
 
     <footer>
       <section id="footer-info-section">
@@ -104,10 +139,9 @@
             >Clich here to check out my Github Respository</a
           >
           <div class="footer__social-media">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100007780788058" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-kim-04999a240/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.instagram.com/dan.t.kim/" target="_blank"><i class="bx bxl-instagram"></i></a>
           </div>
         </div>
 
@@ -134,6 +168,7 @@
         Copyright © 2023 Daniel Kim. All Rights Reserved.
       </div>
     </footer>
+
 
     <script src="js/bootstrap.js"></script>
   </body>

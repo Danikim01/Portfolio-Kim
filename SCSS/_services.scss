@@ -5,16 +5,6 @@
         text-align: center;
         color: #ededed;
     }
-    @media (max-width: 900px){
-        h1{
-            font-size: 45px;
-        }
-    }
-    @media (max-width: 700px){
-        h1{
-            font-size: 35px;
-        }
-    }
     h2{
         color: #ededed;
         font-size: 23px;
@@ -36,6 +26,7 @@
             }
             span{
                 display: inline-block;
+                align-self: flex-start;
                 background-color: #1e40af;
                 padding: 2px 9px;
                 margin-bottom: 1rem;
@@ -51,7 +42,7 @@
             @include link-btn-style;
         }
 
-        @media (max-width: 900px){
+        @media (max-width: 1000px){
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }

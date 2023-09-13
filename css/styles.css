@@ -10,9 +10,23 @@ h2 {
   color: #00abf0;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
 .contact-main {
-  margin-top: 90px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,12 +34,6 @@ h2 {
   color: #ededed;
   margin-bottom: 90px;
   padding: 30px;
-}
-.contact-main h1 {
-  text-align: center;
-  font-size: 56px;
-  font-weight: 700;
-  margin-bottom: 10px;
 }
 .contact-main form {
   border: 2px solid #ededed;
@@ -72,16 +80,6 @@ h2 {
   text-align: center;
   color: #ededed;
 }
-@media (max-width: 900px) {
-  .services-main h1 {
-    font-size: 45px;
-  }
-}
-@media (max-width: 700px) {
-  .services-main h1 {
-    font-size: 35px;
-  }
-}
 .services-main h2 {
   color: #ededed;
   font-size: 23px;
@@ -105,6 +103,7 @@ h2 {
 }
 .services-main .features .card span {
   display: inline-block;
+  align-self: flex-start;
   background-color: #1e40af;
   padding: 2px 9px;
   margin-bottom: 1rem;
@@ -118,10 +117,7 @@ h2 {
   margin-top: 1.25rem;
 }
 .services-main .features .card a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  align-self: center;
   color: #fff;
   text-decoration: none;
   font-size: 1.23rem;
@@ -134,7 +130,7 @@ h2 {
   background-color: #fff;
   color: #27272a;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .services-main .features {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -143,6 +139,84 @@ h2 {
 @media (max-width: 700px) {
   .services-main .features {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.pricing-container {
+  margin-top: 90px;
+  padding: 30px;
+  color: #ededed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pricing-container .sub-header {
+  max-width: 600px;
+  text-align: center;
+}
+.pricing-container .pricing {
+  padding: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 85%;
+}
+.pricing-container .pricing .pricing-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  background-color: #27272a;
+  padding: 3rem 2rem;
+  border: 2px solid transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* Sombreado */
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.pricing-container .pricing .pricing-card:hover {
+  border: 2px solid #fff;
+}
+.pricing-container .pricing .pricing-card .card-content {
+  flex: 1;
+}
+.pricing-container .pricing .pricing-card .card-content p:nth-child(1) {
+  font-size: 18px;
+}
+.pricing-container .pricing .pricing-card .card-content p:nth-child(3) {
+  margin-top: 1.6rem;
+}
+.pricing-container .pricing .pricing-card .card-content #price {
+  border-bottom: 2px dashed #fff;
+}
+.pricing-container .pricing .pricing-card .card-content #price p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.pricing-container .pricing .pricing-card .card-content p {
+  font-size: 14px;
+}
+.pricing-container .pricing .pricing-card .btn {
+  color: #ededed;
+  font-size: 25px;
+  border-radius: 18px;
+  border: 2px solid #fff;
+  transition: all 0.3 ease;
+  width: 100%;
+}
+.pricing-container .pricing .pricing-card .btn:hover {
+  background-color: #fff;
+  color: #27272a;
+}
+@media (max-width: 966px) {
+  .pricing-container .pricing .pricing-card .btn {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .pricing-container .pricing {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -156,12 +230,16 @@ h2 {
 body {
   background-color: #081b29;
 }
+body .home {
+  margin-top: 90px;
+}
 body .home__container {
+  margin-bottom: 120px;
   width: 100%;
   padding: auto;
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
   padding: 0 10%;
@@ -175,12 +253,10 @@ body .home__container .home__content {
   color: #ededed;
 }
 body .home__container .home__content p {
-  max-width: 600px;
-}
-body .home__container .home__content p {
   font-size: 16px;
   font-weight: 400;
   margin: 20px 0;
+  max-width: 600px;
 }
 body .home__container .home__content .btn-box {
   width: 345px;
@@ -310,6 +386,9 @@ body .home__container #prof-pic img:hover {
   }
 }
 
+.home section {
+  margin-bottom: 80px;
+}
 .home section h2, .home section h3 {
   text-align: center;
 }
@@ -358,10 +437,7 @@ body .home__container #prof-pic img:hover {
   margin-bottom: 25px;
 }
 .home section .my-projects .project a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+  align-self: center;
   color: #fff;
   text-decoration: none;
   font-size: 1.23rem;
@@ -385,17 +461,6 @@ body .home__container #prof-pic img:hover {
   }
 }
 
-.header {
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo {
   position: relative;
   font-size: 25px;
@@ -403,44 +468,32 @@ body .home__container #prof-pic img:hover {
   text-decoration: none;
   font-weight: 600;
 }
+.logo span:hover {
+  color: #00abf0;
+}
 
-.navbar a {
+.mi_navbar li a {
   font-size: 18px;
   color: #ededed;
   text-decoration: none;
   font-weight: 500;
-  margin-left: 35px;
   transition: color 0.3s;
 }
-.navbar a:hover {
+.mi_navbar li a:hover {
   color: #00abf0;
+}
+@media (min-width: 768px) {
+  .mi_navbar li {
+    border-right: solid 1px #ededed;
+    border-left: #ededed 1px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .header .logo {
-    margin-bottom: 20px;
-  }
   .home {
     transform: translateY(-80px);
-  }
-}
-@media (max-width: 600px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 footer {
@@ -522,7 +575,7 @@ footer #copyright {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   footer #footer-info-section {
     flex-direction: column;
     justify-content: center;

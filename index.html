@@ -7,17 +7,48 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Daniel.</a>
-      <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="">Pricing</a>
+    <header>
+      <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">
+            <span>Daniel.</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto d-flex mi_navbar">
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="services.html">Services</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="pricing.html">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -27,23 +58,38 @@
           <h1>Hi, I´m Daniel Kim</h1>
           <h2>Web Developer & Programmer</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-            molestiae unde voluptatibus? Fugit pariatur odio, nulla harum at
-            voluptatibus dolores temporibus fuga veniam distinctio dolorum!
+            Currently, I am a computer engineering student at the University of
+            Buenos Aires, aged 22, with a fervent aspiration to broaden my
+            expertise across various domains within the realm of computer
+            science, notably web development. My ultimate endeavor is to
+            cultivate myself into a full-stack programmer, and I remain
+            receptive to all prospects for both educational enrichment and
+            professional engagement within my grasp.
           </p>
           <div class="btn-box">
-            <a href="">Hire Me</a>
-            <a href="">Contact Me</a>
+            <a href="contact.html">Hire Me</a>
+            <a href="contact.html">Contact Me</a>
           </div>
           <div class="social-media">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100007780788058"
+              target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/daniel-kim-04999a240/"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/dan.t.kim/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
           </div>
         </div>
 
-        <div id="prof-pic"><img src="imagenes/prof-pic-me.JPG" alt="" /></div>
+        <div id="prof-pic">
+          <img src="imagenes/prof-pic-me.JPG" alt="my profile picture" />
+        </div>
       </div>
 
       <section>
@@ -61,7 +107,7 @@
           </div>
 
           <div class="project">
-            <span><i class='bx bx-file-blank'></i></span>
+            <span><i class="bx bx-file-blank"></i></span>
             <h3>File System</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
@@ -72,7 +118,7 @@
           </div>
 
           <div class="project">
-            <span><i class='bx bxs-memory-card' ></i></span>
+            <span><i class="bx bxs-memory-card"></i></span>
             <h3>Malloc</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
@@ -81,9 +127,9 @@
             </p>
             <a href="">More <i class="bx bx-chevrons-right"></i></a>
           </div>
-          
+
           <div class="project">
-            <span><i class='bx bxs-terminal' ></i></span>
+            <span><i class="bx bxs-terminal"></i></span>
             <h3>Shell</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
@@ -93,9 +139,8 @@
             <a href="">More <i class="bx bx-chevrons-right"></i></a>
           </div>
 
-
           <div class="project">
-            <span><i class='bx bx-calendar' ></i></span>
+            <span><i class="bx bx-calendar"></i></span>
             <h3>Scheduling</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
@@ -106,7 +151,7 @@
           </div>
 
           <div class="project">
-            <span><i class='bx bxs-game' ></i></span>
+            <span><i class="bx bxs-game"></i></span>
             <h3>Game</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
@@ -115,7 +160,6 @@
             </p>
             <a href="">More <i class="bx bx-chevrons-right"></i></a>
           </div>
-
         </div>
       </section>
     </main>
@@ -132,10 +176,19 @@
             >Clich here to check out my Github Respository</a
           >
           <div class="footer__social-media">
-            <a href=""><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class="bx bxl-linkedin"></i></a>
-            <a href=""><i class="bx bxl-instagram"></i></a>
-            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100007780788058"
+              target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/daniel-kim-04999a240/"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/dan.t.kim/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
           </div>
         </div>
 
@@ -158,9 +211,12 @@
           <a href="">Terms & Conditions</a>
         </div>
       </section>
+
       <div id="copyright">
         Copyright © 2023 Daniel Kim. All Rights Reserved.
       </div>
     </footer>
+
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>

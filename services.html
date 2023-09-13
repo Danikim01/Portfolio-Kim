@@ -7,17 +7,48 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Daniel.</a>
-      <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="">Pricing</a>
+    <header>
+      <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo" href="index.html">
+            <span>Daniel.</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto d-flex mi_navbar">
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="services.html">Services</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item mx-4">
+                <a class="nav-link mx-md-2" href="pricing.html">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -33,7 +64,7 @@
             nostrum? Obcaecati consectetur facilis excepturi architecto eos,
             minima nihil? Dolore, iste!
           </p>
-          <a href="">Join Now <i class="bx bx-chevrons-right"></i></a>
+          <a href="pricing.html">Join Now <i class="bx bx-chevrons-right"></i></a>
         </div>
 
         <div class="card">
@@ -44,7 +75,7 @@
             nostrum? Obcaecati consectetur facilis excepturi architecto eos,
             minima nihil? Dolore, iste!
           </p>
-          <a href="">Join Now <i class="bx bx-chevrons-right"></i></a>
+          <a href="pricing.html">Join Now <i class="bx bx-chevrons-right"></i></a>
         </div>
 
         <div class="card">
@@ -55,7 +86,7 @@
             nostrum? Obcaecati consectetur facilis excepturi architecto eos,
             minima nihil? Dolore, iste!
           </p>
-          <a href="">Join Now <i class="bx bx-chevrons-right"></i></a>
+          <a href="pricing.html">Join Now <i class="bx bx-chevrons-right"></i></a>
         </div>
 
 
@@ -67,7 +98,7 @@
             nostrum? Obcaecati consectetur facilis excepturi architecto eos,
             minima nihil? Dolore, iste!
           </p>
-          <a href="">Join Now <i class="bx bx-chevrons-right"></i></a>
+          <a href="pricing.html">Join Now <i class="bx bx-chevrons-right"></i></a>
         </div>
       </div>
     </main>
@@ -114,5 +145,7 @@
         Copyright © 2023 Daniel Kim. All Rights Reserved.
       </div>
     </footer>
+
+    <script src="js/bootstrap.js"></script>
   </body>
 </html>
