@@ -409,7 +409,7 @@ body .home__container .home__content .social-media::before {
   z-index: 2;
 }
 body .home__container .home__content .social-media a {
-  margin-right: 30px;
+  margin-right: auto;
   position: relative;
   display: flex;
   text-decoration: none;
