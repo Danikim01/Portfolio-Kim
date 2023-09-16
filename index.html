@@ -8,14 +8,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+      <nav
+        class="navbar navbar-expand-md bg-transparent navbar-dark navbar-container"
+      >
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="index.html">
+          <a class="navbar-brand logo mx-auto" href="index.html">
             <span>Daniel.</span>
           </a>
           <button
@@ -92,73 +95,121 @@
         </div>
       </div>
 
-      <section>
+      <section data-aos="fade-up" data-aos-duration="3000">
         <h2>Some of my Projects</h2>
         <div class="my-projects">
           <div class="project">
-            <span><i class="bx bx-bitcoin"></i></span>
-            <h3>Bitcoin Node</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bx-bitcoin"></i></span>
+              <h3>Bitcoin Node</h3>
+              <p>
+                The main objective of this development project is to implement a
+                Bitcoin Node with specific functionalities outlined in this
+                statement, following Bitcoin development guidelines and
+                specifications. The secondary objective of the project is to
+                create a medium-scale real software project while applying good
+                software development practices, including deliveries and reviews
+                using a version control system.
+              </p>
+            </div>
+            <a href="https://github.com/Danikim01/Bitcoin" target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
 
           <div class="project">
-            <span><i class="bx bx-file-blank"></i></span>
-            <h3>File System</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bx-file-blank"></i></span>
+              <h3>File System</h3>
+              <p>
+                Most computer users have had to deal with the high-level concept
+                of what a file system is. While the concept may seem easy to
+                grasp, it can sometimes be challenging for non-expert users to
+                understand. A file system allows users to organize their data so
+                that it persists over a long period of time. The following project
+                consists of a simple implementation of a file system in C.
+              </p>
+            </div>
+            <a
+              href="https://github.com/Danikim01/sisop-fiuba/tree/entrega_filesystem"
+              target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
 
           <div class="project">
-            <span><i class="bx bxs-memory-card"></i></span>
-            <h3>Malloc</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bxs-memory-card"></i></span>
+              <h3>Malloc</h3>
+              <p>
+                The core topic of memory management revolves around the proper
+                way to represent it. Physical memory can be envisioned as an
+                array of memory addresses laid out one after the other. This
+                term paper involves a potential implementation of the malloc
+                function in C.
+              </p>
+            </div>
+            <a
+              href="https://github.com/Danikim01/sisop-fiuba/tree/entrega_malloc"
+              target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
 
           <div class="project">
-            <span><i class="bx bxs-terminal"></i></span>
-            <h3>Shell</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bxs-terminal"></i></span>
+              <h3>Shell</h3>
+              <p>
+                This project focuses on creating a basic shell program in C,
+                often referred to as a "Command Line Interface" or "Shell." A
+                shell is a crucial component of any operating system, providing
+                users with a text-based interface to interact with the system's
+                resources and execute commands. Provides a hands-on experience
+                in system programming, C programming, and understanding
+                operating system concepts.
+              </p>
+            </div>
+            <a
+              href="https://github.com/Danikim01/sisop-fiuba/tree/entrega_sched"
+              target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
 
           <div class="project">
-            <span><i class="bx bx-calendar"></i></span>
-            <h3>Scheduling</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bx-calendar"></i></span>
+              <h3>Scheduling</h3>
+              <p>
+                When there are multiple tasks to be performed, how do you decide
+                which one to do first? There must be a mechanism in place that
+                allows for the allocation of CPU time to each process. The
+                period of time that the kernel assigns to a process is referred
+                to as a "time slice" or "time quantum." This project involves a
+                simple implementation of the scheduling mechanism in C.
+              </p>
+            </div>
+
+            <a
+              href="https://github.com/Danikim01/sisop-fiuba/tree/entrega_sched"
+              target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
 
           <div class="project">
-            <span><i class="bx bxs-game"></i></span>
-            <h3>Game</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima a
-              ipsa molestias. Blanditiis ut in, veniam ipsa ducimus explicabo
-              fuga?
-            </p>
-            <a href="">More <i class="bx bx-chevrons-right"></i></a>
+            <div>
+              <span><i class="bx bxs-game"></i></span>
+              <h3>Game</h3>
+              <p>
+                You know that everyone likes to play, I won't tell you much
+                more... explore and have fun!
+              </p>
+            </div>
+            <a href="https://github.com/Danikim01/TP_2---Algo1" target="_blank"
+              >More <i class="bx bx-chevrons-right"></i
+            ></a>
           </div>
         </div>
       </section>
@@ -192,23 +243,25 @@
           </div>
         </div>
 
-        <div class="footer__subsection">
-          <h3>Company</h3>
-          <a href="">Business</a>
-          <a href="">Partnership</a>
-          <a href="">Network</a>
-        </div>
-        <div class="footer__subsection">
-          <h3>About Us</h3>
-          <a href="">Blogs</a>
-          <a href="">Channels</a>
-          <a href="">Sponsors</a>
-        </div>
-        <div class="footer__subsection">
-          <h3>Contact</h3>
-          <a href="">Contact Us</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
+        <div class="footer-subsection-container">
+          <div class="footer__subsection">
+            <h3>Company</h3>
+            <a href="">Business</a>
+            <a href="">Partnership</a>
+            <a href="">Network</a>
+          </div>
+          <div class="footer__subsection">
+            <h3>About Us</h3>
+            <a href="">Blogs</a>
+            <a href="">Channels</a>
+            <a href="">Sponsors</a>
+          </div>
+          <div class="footer__subsection">
+            <h3>Contact</h3>
+            <a href="">Contact Us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+          </div>
         </div>
       </section>
 
@@ -218,5 +271,9 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -9,6 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -53,7 +54,7 @@
     </header>
 
     <main>
-      <section class="pricing-container">
+      <section class="pricing-container" data-aos="flip-right">
         <h1>Pricing Plans</h1>
         <p class="sub-header">
           Our pricing plans come with a 30-day money back guarantee and various
@@ -139,37 +140,53 @@
             >Clich here to check out my Github Respository</a
           >
           <div class="footer__social-media">
-            <a href="https://www.facebook.com/profile.php?id=100007780788058" target="_blank"><i class="bx bxl-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/daniel-kim-04999a240/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://www.instagram.com/dan.t.kim/" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100007780788058"
+              target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/daniel-kim-04999a240/"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/dan.t.kim/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
           </div>
         </div>
 
-        <div class="footer__subsection">
-          <h3>Company</h3>
-          <a href="">Business</a>
-          <a href="">Partnership</a>
-          <a href="">Network</a>
-        </div>
-        <div class="footer__subsection">
-          <h3>About Us</h3>
-          <a href="">Blogs</a>
-          <a href="">Channels</a>
-          <a href="">Sponsors</a>
-        </div>
-        <div class="footer__subsection">
-          <h3>Contact</h3>
-          <a href="">Contact Us</a>
-          <a href="">Privacy Policy</a>
-          <a href="">Terms & Conditions</a>
+        <div class="footer-subsection-container">
+          <div class="footer__subsection">
+            <h3>Company</h3>
+            <a href="">Business</a>
+            <a href="">Partnership</a>
+            <a href="">Network</a>
+          </div>
+          <div class="footer__subsection">
+            <h3>About Us</h3>
+            <a href="">Blogs</a>
+            <a href="">Channels</a>
+            <a href="">Sponsors</a>
+          </div>
+          <div class="footer__subsection">
+            <h3>Contact</h3>
+            <a href="">Contact Us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms & Conditions</a>
+          </div>
         </div>
       </section>
+
       <div id="copyright">
         Copyright © 2023 Daniel Kim. All Rights Reserved.
       </div>
     </footer>
 
-
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

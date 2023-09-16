@@ -10,11 +10,13 @@
         font-size: 23px;
     }
     .features{
+        width: 100%;
         padding: 30px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
+        gap: 25px;
         .card{
+            height: 100%;
             background-color: #27272a;
             padding: 1rem;
             border: 2px solid transparent;
@@ -35,20 +37,44 @@
                 border-radius: 5px;
             }
             p{
+                width: 100%;
+                height: 100%;
                 color:#ccc;
-                margin-bottom: 1.9rem;
                 margin-top: 1.25rem;
             }
+            #card-image{
+                margin:10px;
+                margin-bottom: 2.3rem;
+                border: 3px solid #fff;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                transition: all 0.6s ease;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+
             @include link-btn-style;
         }
 
-        @media (max-width: 1000px){
+        @media (max-width: 1200px){
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
 
-        @media (max-width: 700px){
+        @media (max-width: 900px){
             grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (max-width:600px){
+            .card{
+                #card-image{
+                    display: none
+                }
+            }
         }
     }
 }
+
