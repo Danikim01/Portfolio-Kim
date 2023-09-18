@@ -393,7 +393,7 @@ body .home__container .home__content .social-media {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: relative;
 }
 body .home__container .home__content .social-media::before {
@@ -409,7 +409,6 @@ body .home__container .home__content .social-media::before {
   z-index: 2;
 }
 body .home__container .home__content .social-media a {
-  margin-right: auto;
   position: relative;
   display: flex;
   text-decoration: none;
@@ -473,6 +472,7 @@ body .home__container #prof-pic img:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   body .home__container .home__content .btn-box {
@@ -483,6 +483,9 @@ body .home__container #prof-pic img:hover {
   }
   body .home__container .home__content .social-media {
     justify-content: center;
+  }
+  body .home__container .home__content .social-media a {
+    margin: auto;
   }
   body .aptitudes {
     transform: translateY(-50px);
